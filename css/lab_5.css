@@ -233,18 +233,17 @@ footer:before{
     padding: 0% 0% 0% 15%;
 }
 .line__copyright{
-    height: auto;  width: auto;
     background-color: #000000;
     display: flex;
     justify-content: space-between;
-    padding: 0% 5%;
+    padding: 2% 5%;
+    flex-wrap: wrap;
 }
 .copyright__text{
     color: #cdcbcb;
     font-family: "Myriad Pro";
     font-size: 120%;
     font-weight: 400;
-    line-height: 95px;
     letter-spacing: 0.6px;
 }
 .copyright__social{
@@ -340,6 +339,10 @@ footer:before{
 	    display: flex;
 	    flex-direction: column;
 	}
+	.heroes-description{
+		width: 100%;  height: auto;
+		 padding-bottom: 15%;
+	}
 	.nav__check:checked+.nav__showmenu {
 	    color: rgba(0,0,0,0.3);
 	}
@@ -372,7 +375,16 @@ footer:before{
 	.fa div{
 	    margin-right: 25%;
 	}
+	.line__copyright{
+	    display: flex;	
+	    justify-content: center;
+	}
 	.copyright__text{
 	    font-size: 90%;
+	    padding-bottom: 4%;
 	}
+	.copyright__social{
+    	width: 100%;
+	}
+
 }

@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: block;
+}
+label, input{
+    display: none;
+}
+.text{
+    @include text(140%, "Myriad Pro", $redColor, normal, normal, normal, uppercase);
+    padding: 4% 5%;
+}
+main{
+    display: block;
+}
+.slider-image{
+    @include size(auto, 90%);
+    background: url(../img/1.jpg) no-repeat center / cover;
+}
+.welcom-yourcompanyname{
+  @include flex (flex, column, flex-start, flex-end, center);
+	padding: 30% 0% 10% 0%;
+}
+.welcom{
+  @include size(516px, 51px);
+  @include text(400%, Athelas,$whiteColor, 400, 1.8px, 30px, uppercase);
+  text-shadow: -1px 0px 1px $blackColor;
+}
+.yourcompanyname{
+  @include size(509px, 31px);
+  @include text(250%, Athelas,$redColor, 400, 1.2px, 30px, uppercase);
+}
+.menu{
+    @include size(auto, 77px);
+    background-color: $blackColor;
+    opacity: 0.3;
+    padding-left: 6%;
+    font-size: 100%;
+    font-family: "Myriad Pro";
+}
+.menu li{
+    @include size(auto, 100%);
+    padding: 0 2%;
+    float: left;
+    @include flex (flex, row, center, center, left);
+}
+a{
+    text-decoration: none;
+}
+.menu a{
+    @include size(auto, inherit)
+    @include flex (flex, row, center, center, left);
+    @include text(medium, Athelas,$whiteColor, normal, normal, normal, uppercase);
+}
+.menu li:hover{
+    background: $blueColorOp;
+}
+.our-team-leaders{
+    @include size(40%, auto);
+    @include flex (flex, row, center, center, left);
+    border-bottom: 2.5px solid $redColor;
+    margin: 8% auto 0%;
+    @include text(250%, Athelas, $redColor, 400, normal, normal, uppercase);
+}
+.lorem{
+    @include size(60%, 50%);
+    @include text(100%, Helvetica, $blackColor, 400, 0.9px, 25.46px, none);
+    margin: 2% auto;
+    text-align: justify;
+}
+.img{
+    @include flex (flex, row, space-evenly, stretch, left);
+    margin: 7% 5% 3% 5%;
+}
+.img img{
+    @include size(80%, auto);
+    display: block;
+    border: 1px solid transparent;
+    background-size: cover;
+    padding-left: 10%;
+}
+.heroes:hover, .heroes-description:hover{
+    color: $greyColor;
+}
+li{
+    @include flex (flex, row, center, stretch, justify);
+    list-style: none;
+}
+.heroes{
+    @include text(150%, Helvetica, $blackColor, 400,  0.9px, 25.46px, none);
+    padding: 4% 0 2% 0;
+}
+.heroes-description{
+    @include text(100%, Helvetica, $blackColor, 400,  0.6px, 25.46px, none);
+    @include size(70%, 70px);
+}
+.streak{
+    margin: 10% 0% 0% 0%;
+    @include size(auto, auto);
+    border: 1px solid $darkBlueColor;
+    background: $darkBlueColor;
+    text-transform: uppercase;
+}
+.number, .explanation{
+    @include flex (flex, row, space-evenly, stretch, left);
+}
+.number li{
+    @include text(300%, Vani, $redColor, 700,  normal, normal, uppercase);
+    display: block;
+    float: left;
+    padding-top: 3%;
+}
+.explanation li{
+    @include text(70%, "Myriad Pro", $whiteColor, 400,  normal, normal, uppercase);
+    display: block;
+    float: left;
+    padding: 1% 0% 3% 0%;
+}
+.container-point{
+    @include size(auto, 1000px);
+    margin: 0%;  padding: 0%;
+    border: 1px solid transparent;
+    background: url(../img/point_2.jpg) no-repeat center / cover;
+}
+footer:before{
+    @include size(100%, auto);
+    position: fixed;
+    left: 0; bottom: 0;
+}
+.line__menu{
+    @include flex (flex, row, space-evenly, baseline, left);
+    background: radial-gradient($darkBlueColor_2, $darkBlueColor);
+}
+.menu__item li{
+    @include flex (block, row, flex-start, stretch, left);
+}
+.title{
+    @include text(150%, "Myriad Pro", $whiteColor, normal, 0.6px, 290%, uppercase);
+    padding-bottom: 5%;
+}
+.menu__item{
+    @include text(120%, "Myriad Pro", $whiteColor, normal, normal, 200%, none);
+    padding: 3% 0% 3% 5%;
+}
+.menu__item a{
+    @include text(90%, "Myriad Pro", $whiteColor, normal, normal, normal, none);
+}
+.fa div{
+    @include text(90%, "Myriad Pro", $whiteColor, normal, 0.6px, 290%, none);
+    margin: 0% 5% 0% 10%;
+    text-align: end;
+}
+.fa i{
+    color: $whiteColor;
+    font-size: 150%;
+    padding: 0% 0% 0% 15%;
+}
+.line__copyright{
+    @include flex (flex, row, space-between, stretch, left);
+    background-color: $blackColor;
+    padding: 2% 5%;
+    flex-wrap: wrap;
+}
+.copyright__text{
+    @include text(120%, "Myriad Pro", $whiteColor, 400, 0.6px, normal, none);
+}
+.copyright__social{
+    @include size(17%, auto);
+    @include flex (flex, row, space-evenly,  center, left);
+}
+.social a{
+    color: $whiteColor;
+}
+.fa-2x{
+    font-size: 160%;
+}
+.google-pluse a:hover, .twitter a:hover,  .instagram a:hover, .facebook a:hover, .menu__item a:hover{
+    color: $redColor;
+}

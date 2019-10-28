@@ -1,0 +1,115 @@
+@media (max-width: 1024px){
+    .our-team-leaders{
+        font-size: 100%;
+        border-bottom: 1px solid;
+    }
+    .number li{
+        font-size: 120%;
+    }
+    .heroes, .menu, .text, .copyright__text{
+        font-size: 90%;
+    }
+    .heroes-description, .fa div, .lorem{
+        font-size: 80%;
+        line-height: 150%;
+    }
+    .explanation li{
+        font-size: 50%;
+    }
+    .title{
+        font-size: 90%;
+        line-height: 200%;
+    }
+    .menu__item{
+        font-size: 70%;
+    }
+    .welcom{
+		font-size: 250%;
+	}
+	.yourcompanyname{
+		font-size: 150%;
+	}
+}
+
+@media (max-width: 768px){
+	input, .main__menu li {
+	    display: none;
+	}
+	label {
+	    cursor: pointer;
+	}
+	.nav__showmenu {
+	    position: relative;
+	    z-index: 1;
+	    display: block;
+	    padding: 5%;
+	    font-size: 250%;
+	    color: $blackColor;
+      opacity: 0.3;
+	}
+	.nav__back {
+	    position: fixed;
+	    transition: background-color .3s;
+	}
+	.menu {
+      @include size(auto, 100%);
+      @include flex (flex, column, flex-start, stretch, left);
+      @include text(150%, Athelas,$whiteColor, normal, normal, 250%, uppercase);
+	    padding: 5% 30%;
+	    transform: translateX(-100%);
+	    transition: transform .3s;
+	}
+	.img {
+	    padding: 0% 15%;
+	}
+	.menu a{
+      @include size(auto, 40px);
+	}
+	.img, .heroes, .heroes-description{
+      @include flex (flex, column, flex-start, stretch, left);
+	}
+	.heroes-description{
+    @include size(100%, auto);
+		 padding-bottom: 15%;
+	}
+	.nav__check:checked+.nav__showmenu {
+	    color: $blackColor;
+      opacity: 0.3;
+	}
+	.nav__check:checked~.menu {
+	    transform: translateX(0);
+	}
+	.line__menu{
+      @include flex (flex, column, flex-start, stretch, left);
+	}
+	.menu__item{
+      @include size(95%, auto);
+      @include flex (flex, column, flex-start, center, left);
+      font-size: 100%;
+      box-shadow: 0px -20px 0px 0px $darkBlueColor;
+	}
+	.menu__item .fa{
+      @include size(200px, auto);
+	    align-self: flex-end;
+	}
+	.title{
+	    padding-bottom: 2%;
+	    line-height: 150%;
+	}
+	.fa i{
+	    padding: 0%;
+	}
+	.fa div{
+	    margin-right: 25%;
+	}
+	.line__copyright{
+      @include flex (flex, row, center, center, left);
+	}
+	.copyright__text{
+	    font-size: 90%;
+	    padding-bottom: 4%;
+	}
+	.copyright__social{
+      @include size(100%, auto);
+	}
+}
