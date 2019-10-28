@@ -347,7 +347,7 @@ footer:before {
   letter-spacing: normal;
   line-height: 200%;
   text-transform: none;
-  padding: 3% 0% 3% 5%; }
+  padding: 3% 0% 10% 5%; }
 
 .menu__item a {
   font-size: 90%;
@@ -458,6 +458,12 @@ footer:before {
     display: none; }
   label {
     cursor: pointer; }
+  .welcom, .yourcompanyname {
+    width: 90%;
+    height: auto; }
+  .our-team-leaders {
+    width: 50%;
+    height: auto; }
   .nav__showmenu {
     position: relative;
     z-index: 1;

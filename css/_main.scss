@@ -142,7 +142,7 @@ footer:before{
 }
 .menu__item{
     @include text(120%, "Myriad Pro", $whiteColor, normal, normal, 200%, none);
-    padding: 3% 0% 3% 5%;
+    padding: 3% 0% 10% 5%;
 }
 .menu__item a{
     @include text(90%, "Myriad Pro", $whiteColor, normal, normal, normal, none);

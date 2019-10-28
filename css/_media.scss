@@ -38,7 +38,13 @@
 	label {
 	    cursor: pointer;
 	}
-	.nav__showmenu {
+  .welcom, .yourcompanyname{
+      @include size(90%, auto);
+  }
+  .our-team-leaders{
+      @include size(50%, auto);
+  }
+  	.nav__showmenu {
 	    position: relative;
 	    z-index: 1;
 	    display: block;
